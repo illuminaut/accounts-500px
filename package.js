@@ -1,6 +1,6 @@
 Package.describe({
   name: 'illuminaut:accounts-500px',
-  version: '0.1.1',
+  version: '0.1.2',
   summary: 'Login service for 500px accounts',
   git: 'https://github.com/illuminaut/accounts-500px.git',
   documentation: 'README.md'

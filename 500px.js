@@ -1,17 +1,17 @@
-Accounts.oauth.registerService('500px');
+Accounts.oauth.registerService('Fivehundredpx');
 if (Meteor.isClient) {
-  Meteor.loginWith500px = function(options, callback) {
+  Meteor.loginWithFivehundredpx = function(options, callback) {
     // support a callback without options
     if (! callback && typeof options === "function") {
       callback = options;
       options = null;
     }
     var credentialRequestCompleteCallback = Accounts.oauth.credentialRequestCompleteHandler(callback);
-    _500px.requestCredential(options, credentialRequestCompleteCallback);
+    Fivehundredpx.requestCredential(options, credentialRequestCompleteCallback);
   };
 } else {
   Accounts.addAutopublishFields({
-    forLoggedInUser: ['services.500px'],
-    forOtherUsers: ['services.500px.name', 'services.500px.id']
+    forLoggedInUser: ['services.Fivehundredpx'],
+    forOtherUsers: ['services.Fivehundredpx.name', 'services.Fivehundredpx.id']
   });
 }
