@@ -9,14 +9,14 @@ Configure 500px services. Example:
 
 ```
 ServiceConfiguration.configurations.remove({
-    service: "500px"
+    service: "Fivehundredpx"
   });
   
 ServiceConfiguration.configurations.upsert(
-  { service: "500px" },
+  { service: "Fivehundredpx" },
   { $set: { consumerKey: <your client_id>, secret: <client_secret> } }
 );
 
 ```
 
-Using any accounts-ui package it will enable the Sign in with 500px button.
+Using any accounts-ui package it will enable the "Sign in with Fivehundredpx" button.
